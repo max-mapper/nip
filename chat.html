@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+<title>聊天界面</title>
+
+<script>
+$(function(){
+	$("#chattext-input").on('input',function(){
+		if($(this).val()){
+			$("#chattext-btn").addClass('intext');
+		}else{
+			$("#chattext-btn").removeClass('intext');
+		}
+	})
+})
+</script>
+</head>
+<body>
+
+	<div class="page-wrap">
+    <div class="page">
+        <div class="header">
+            <a href="javascript:void(0)" class="header-returnbtn">黎小萍</a>
+            <a href="javascript:void(0)" class="header-rightbtn" id="header-chat">Chat</a>
+        </div>
+        <div class="content">
+        	<div class="chatwin">
+            	<div class="chatwin-scroll">
+                    <div class="chatwin-wrap chatwin-right" >
+                        <img src="test/0.jpg" />
+                        <div class="chatwin-dialog">
+                            <div class="chatwin-win" >我爱你，爱你，爱你，</div>
+                            <div class="chatwin-arrow"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="chatwin-wrap chatwin-left" >
+                        <img src="test/5e4ce4ac0_l.jpg" />
+                        <div class="chatwin-dialog">
+                            <div class="chatwin-win" >我爱你，爱你，爱你，我爱你，爱你，爱你，我爱你，爱你，爱你，我爱你，爱你，爱你，我爱你，爱你，爱你，我爱你，爱你，爱你，</div>
+                            <div class="chatwin-arrow"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="chatwin-wrap chatwin-right" >
+                        <img src="test/0.jpg" />
+                        <div class="chatwin-dialog">
+                            <div class="chatwin-win" >我爱你，爱你，爱你，我爱你，爱你，爱你，</div>
+                            <div class="chatwin-arrow"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="chatwin-wrap chatwin-right" >
+                        <img src="test/0.jpg" />
+                        <div class="chatwin-dialog">
+                            <div class="chatwin-win" >我爱你，爱你，爱你，我爱你，爱你，爱你，</div>
+                            <div class="chatwin-arrow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chattext">
+            	<div class="chattext-wrap">
+                	<div class="chattext-line"></div>
+                    <div class="chattext-input"><input id="chattext-input" type="text" ></div>
+                </div>
+                <a href="javascript:void(0)" id="chattext-btn" class="chattext-btn" ></a>
+            </div>
+        </div>
+    </div>
+    </div>
+       
+</body>
+</html>
