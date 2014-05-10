@@ -82,17 +82,21 @@ $(function(){
 			if(slide.offAngle < -6){
 				if(slide.run)return;
 				slide.run = true;
-				$('.evaluate li:nth-last-child(1)').addClass("transition").addClass("transition").css("-webkit-transform","translate(0px, 0px) rotate(-45deg)");
+				$('.evaluate li:nth-last-child(1)')[0].addEventListener("webkitTransitionEnd", function(e){
+					removeLastEvaluate();
+				}, false);
+				$('.evaluate li:nth-last-child(1)').addClass("transition").css("-webkit-transform","translate(0px, 0px) rotate(-45deg)");
 				$('.evaluate li:nth-last-child(2)').css("-webkit-transform","scale(1,1)");
 				$('.evaluate li:nth-last-child(3)').css("-webkit-transform","scale(0.95,0.95) translateY(16px)");
-				setTimeout(removeLastEvaluate, 400);
 			}else if(slide.offAngle > 6){
 				if(slide.run)return;
 				slide.run = true;
-				$('.evaluate li:nth-last-child(1)').addClass("transition").addClass("transition").css("-webkit-transform","translate(0px, 0px) rotate(45deg)");
+				$('.evaluate li:nth-last-child(1)')[0].addEventListener("webkitTransitionEnd", function(e){
+					removeLastEvaluate();
+				}, false);
+				$('.evaluate li:nth-last-child(1)').addClass("transition").css("-webkit-transform","translate(0px, 0px) rotate(45deg)");
 				$('.evaluate li:nth-last-child(2)').css("-webkit-transform","scale(1,1)");
 				$('.evaluate li:nth-last-child(3)').css("-webkit-transform","scale(0.95,0.95) translateY(16px)");
-				setTimeout(removeLastEvaluate, 400);
 			}else{
 				$('.evaluate li:nth-last-child(1)').addClass("transition").css("-webkit-transform","translate(0px, 0px) rotate(0deg)");
 				setTimeout(function() {$('.evaluate li:nth-last-child(1)').removeClass("transition")}, 500);
@@ -105,95 +109,43 @@ $(function(){
 	$('#evaluate-nope').click(function(e) {
 		if(slide.run)return;
 		slide.run = true;
-		$('.evaluate li:nth-last-child(1)').addClass("transition").addClass("transition").css("-webkit-transform","translate(0px, 0px) rotate(45deg)");
+		$('.evaluate li:nth-last-child(1)')[0].addEventListener("webkitTransitionEnd", function(e){
+			removeLastEvaluate();
+		}, false);
+		$('.evaluate li:nth-last-child(1)').addClass("transition").css("-webkit-transform","translate(0px, 0px) rotate(45deg)");
 		$('.evaluate li:nth-last-child(2)').css("-webkit-transform","scale(1,1)");
 		$('.evaluate li:nth-last-child(3)').css("-webkit-transform","scale(0.95,0.95) translateY(16px)");
-		setTimeout(removeLastEvaluate, 400);
     });
 	
 	$('#evaluate-like').click(function(e) {
 		if(slide.run)return;
 		slide.run = true;
-		$('.evaluate li:nth-last-child(1)').addClass("transition").addClass("transition").css("-webkit-transform","translate(0px, 0px) rotate(-45deg)");
+		$('.evaluate li:nth-last-child(1)')[0].addEventListener("webkitTransitionEnd", function(e){
+			removeLastEvaluate();
+		}, false);
+		$('.evaluate li:nth-last-child(1)').addClass("transition").css("-webkit-transform","translate(0px, 0px) rotate(-45deg)");
 		$('.evaluate li:nth-last-child(2)').css("-webkit-transform","scale(1,1)");
 		$('.evaluate li:nth-last-child(3)').css("-webkit-transform","scale(0.95,0.95) translateY(16px)");
-		setTimeout(removeLastEvaluate, 400);
     });
+	
 });
 
 function removeLastEvaluate(){
 	$('.evaluate li:nth-last-child(1)').remove();
 	slide.run = false;
+	if(!$('.evaluate li').length){
+		$('#content-evaluate').hide();
+		$("#content-rader").show().css("opacity", "1");
+		startDrawRader();
+	}
 }
 
-//绘制图形
-var rader = {};
-
 function startDrawRader(){
-	rader.circle1 = $("#rader-circle1");
-	rader.circle2 = $("#rader-circle2");
-	var dateObj=new Date();
-	rader.currentTime = dateObj.getTime();
-	drawRader(0);
+	$("#rader-circle1")[0].style.webkitAnimation = 'rader-circle-animation linear 3s infinite';
+	setTimeout("$('#rader-circle2')[0].style.webkitAnimation = 'rader-circle-animation linear 3s infinite'", 1450);
 }
 
 function stopDrawRader(){
-	cancelRequestAnimFrame(rader.requestId);
-	rader.circle1.width(100).height(100).css({'top': "104px", 'margin-left': "-50px", 'opacity': 0});
-	rader.circle2.width(100).height(100).css({'top': "104px", 'margin-left': "-50px", 'opacity': 0});
+	$("#rader-circle1")[0].style.webkitAnimation = '';
+	$("#rader-circle2")[0].style.webkitAnimation = '';
 }
-
-function drawRader(currentTime){
-	rader.requestId = requestAnimFrame(drawRader);
-	if(currentTime == null){
-		var dateObj=new Date();
-		currentTime = dateObj.getTime() - rader.currentTime;
-	};
-	var raderTime1 = currentTime / 3 % 1600;
-	var raderTime2 = (currentTime / 3 % 1600) - 800;
-	if(raderTime2 < 0)raderTime2 += 1600; 
-	if(raderTime1 < 1000){
-		rader.radius1 = 0.3 * raderTime1 + 100;
-		rader.opacity1 = -0.0004 * raderTime1 + 0.4;
-		rader.top1 = -0.5 * rader.radius1 + 154;
-		rader.marginLeft1 = -rader.radius1 / 2;
-		rader.circle1.width(rader.radius1).height(rader.radius1).css({'top': rader.top1 + "px", 'margin-left': rader.marginLeft1 + "px", 'opacity': rader.opacity1});
-	}else{
-		rader.circle1.css('opacity', 0);
-	}
-	if(currentTime > 800 & raderTime2 < 1000){
-		rader.radius2 = 0.3 * raderTime2 + 100;
-		rader.opacity2 = -0.0004 * raderTime2 + 0.4;
-		rader.top2 = -0.5 * rader.radius2 + 154;
-		rader.marginLeft2 = -rader.radius2 / 2;
-		rader.circle2.width(rader.radius2).height(rader.radius2).css({'top': rader.top2 + "px", 'margin-left': rader.marginLeft2 + "px", 'opacity': rader.opacity2});
-	}else{
-		rader.circle2.css('opacity', 0);
-	}
-}
-
-/**
- * Provides requestAnimationFrame in a cross browser way.
- */
-window.requestAnimFrame = (function() {
-  return window.requestAnimationFrame ||
-         window.webkitRequestAnimationFrame ||
-         window.mozRequestAnimationFrame ||
-         window.oRequestAnimationFrame ||
-         window.msRequestAnimationFrame ||
-         function(/* function FrameRequestCallback */ callback, /* DOMElement Element */ element) {
-           return window.setTimeout(callback, 1000/60);
-         };
-})();
-
-/**
- * Provides cancelRequestAnimationFrame in a cross browser way.
- */
-window.cancelRequestAnimFrame = (function() {
-  return window.cancelCancelRequestAnimationFrame ||
-         window.webkitCancelRequestAnimationFrame ||
-         window.mozCancelRequestAnimationFrame ||
-         window.oCancelRequestAnimationFrame ||
-         window.msCancelRequestAnimationFrame ||
-         window.clearTimeout;
-})();

@@ -111,6 +111,8 @@ input{
 	background-size:35px 35px;
 	text-indent:-9999999px;
 }
+
+
 /*菜单*/
 .menu {
 	position: absolute;
@@ -343,6 +345,7 @@ input{
 	width:100%;
 	top:50px; bottom:0px;
 	overflow:hidden;
+	transition:opacity 1s;
 }
 /*雷达*/
 .rader{
@@ -378,6 +381,24 @@ input{
 	opacity:0;
 	z-index:-1;
 }
+
+@-webkit-keyframes rader-circle-animation 
+{
+	0% {
+		opacity:0.6;
+		-webkit-transform: scale(1, 1);
+	}
+	70% {
+		opacity:0;
+		-webkit-transform: scale(4, 4);
+	}
+	
+	100% {
+		opacity:0;
+		-webkit-transform: scale(4, 4);
+	}
+}
+
 .rader-finding{
 	margin-top:300px;
 	text-align:center;
@@ -536,7 +557,7 @@ input{
 }
 
 .evaluate li.transition{
-	-webkit-transition: -webkit-transform 0.5s;
+	-webkit-transition: -webkit-transform 1s;
 }
 
 .evaluate li:nth-last-child(2){
