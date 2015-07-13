@@ -1,0 +1,107 @@
+The Multimodal Interaction Working Group has published a Working Draft of Discovery &#38; Registration of Multimodal Modality Components: State Handling. This document is addressed to people who want either to develop Modality Components for Multimodal Applications distributed over a local network or &#8220;in the cloud&#8221;. With this goal, in a multimodal system implemented according to [&#8230;]<img src="https://www.w3.org/analytics/piwik/piwik.php?idsite=7&amp;rec=1&amp;url=http%3A%2F%2Fwww.w3.org%2Fblog%2Fnews%2Farchives%2F4756%3Fpk_campaign%3Dfeed%26pk_kwd%3Ddiscovery-registration-of-multimodal-modality-components-state-handling-draft-published&amp;action_name=Discovery+and+Registration+of+Multimodal+Modality+Components%3A+State+Handling+Draft+Published&amp;urlref=http%3A%2F%2Fwww.w3.org%2Fblog%2Fnews%2Ffeed" style="border:0;width:0;height:0" width="0" height="0" alt="" />
+]]>
+</description>
+<content:encoded>
+<![CDATA[
+<p>The <a href="http://www.w3.org/2002/mmi/">Multimodal Interaction Working Group</a> has published a Working Draft of <a href="http://www.w3.org/TR/2015/WD-mmi-mc-discovery-20150611/">Discovery &amp; Registration of Multimodal Modality Components: State Handling</a>. This document is addressed to people who want either to develop Modality Components for Multimodal Applications distributed over a local network or &#8220;in the cloud&#8221;. With this goal, in a multimodal system implemented according to the Multimodal Architecture Specification, the system must discover and register its Modality Components in order to preserve the overall state of the distributed elements. In this way, Modality Components can be composed with automation mechanisms in order to adapt the Application to the state of the surrounding environment. Learn more about the <a href="http://www.w3.org/2002/mmi/">Multimodal Interaction Activity</a>.</p> <p><img src="https://www.w3.org/analytics/piwik/piwik.php?idsite=7&amp;rec=1&amp;url=http%3A%2F%2Fwww.w3.org%2Fblog%2Fnews%2Farchives%2F4756%3Fpk_campaign%3Dfeed%26pk_kwd%3Ddiscovery-registration-of-multimodal-modality-components-state-handling-draft-published&amp;action_name=Discovery+and+Registration+of+Multimodal+Modality+Components%3A+State+Handling+Draft+Published&amp;urlref=http%3A%2F%2Fwww.w3.org%2Fblog%2Fnews%2Ffeed" style="border:0;width:0;height:0" width="0" height="0" alt="" /></p>
+]]>
+</content:encoded>
+<wfw:commentRss>
+http://www.w3.org/blog/news/archives/4756?pk_campaign=feed&pk_kwd=discovery-registration-of-multimodal-modality-components-state-handling-draft-published/feed
+</wfw:commentRss>
+<slash:comments>0</slash:comments>
+</item>
+<item>
+<title>
+W3C Invites Implementations of CSS Values and Units Module Level 3 and CSS Counter Styles Level 3
+</title>
+<link>
+http://www.w3.org/blog/news/archives/4753?pk_campaign=feed&pk_kwd=w3c-invites-implementations-of-css-values-and-units-module-level-3-and-css-counter-styles-level-3
+</link>
+<comments>
+http://www.w3.org/blog/news/archives/4753?pk_campaign=feed&pk_kwd=w3c-invites-implementations-of-css-values-and-units-module-level-3-and-css-counter-styles-level-3#comments
+</comments>
+<pubDate>Thu, 11 Jun 2015 13:27:19 +0000</pubDate>
+<dc:creator>
+<![CDATA[ Maria Auday ]]>
+</dc:creator>
+<category>
+<![CDATA[ Publication ]]>
+</category>
+<category>
+<![CDATA[ Web Design and Applications ]]>
+</category>
+<guid isPermaLink="false">http://www.w3.org/blog/news/?p=4753</guid>
+<description>
+<![CDATA[
+The Cascading Style Sheets (CSS) Working Group invites implementation of two Candidate Recommendations: CSS Values and Units Module Level 3. This CSS3 module describes the common values and units that CSS properties accept and the syntax used for describing them in CSS property definitions. CSS Counter Styles Level 3. This module introduces the counter-style rule, [&#8230;]<img src="https://www.w3.org/analytics/piwik/piwik.php?idsite=7&amp;rec=1&amp;url=http%3A%2F%2Fwww.w3.org%2Fblog%2Fnews%2Farchives%2F4753%3Fpk_campaign%3Dfeed%26pk_kwd%3Dw3c-invites-implementations-of-css-values-and-units-module-level-3-and-css-counter-styles-level-3&amp;action_name=W3C+Invites+Implementations+of+CSS+Values+and+Units+Module+Level+3+and+CSS+Counter+Styles+Level+3&amp;urlref=http%3A%2F%2Fwww.w3.org%2Fblog%2Fnews%2Ffeed" style="border:0;width:0;height:0" width="0" height="0" alt="" />
+]]>
+</description>
+<content:encoded>
+<![CDATA[
+<p>The <a href="http://www.w3.org/Style/CSS/members">Cascading Style Sheets (CSS) Working Group</a> invites implementation of two Candidate Recommendations:</p> <ul class="show_items"> <li><a href="http://www.w3.org/TR/2015/CR-css-values-3-20150611/">CSS Values and Units Module Level 3</a>. This CSS3 module describes the common values and units that CSS properties accept and the syntax used for describing them in CSS property definitions.</li> <li><a href="http://www.w3.org/TR/2015/CR-css-counter-styles-3-20150611/">CSS Counter Styles Level 3</a>. This module introduces the counter-style rule, which allows authors to define their own custom counter styles for use with CSS list-marker and generated-content counters CSS3LIST. It also predefines a set of common counter styles, including the ones present in CSS2 and CSS2.1. </li> </ul> <p>CSS is a language for describing the rendering of structured documents (such as HTML and XML) on screen, on paper, in speech, etc. Learn more about the <a href="http://www.w3.org/Style/">Style Activity</a>.</p> <p><img src="https://www.w3.org/analytics/piwik/piwik.php?idsite=7&amp;rec=1&amp;url=http%3A%2F%2Fwww.w3.org%2Fblog%2Fnews%2Farchives%2F4753%3Fpk_campaign%3Dfeed%26pk_kwd%3Dw3c-invites-implementations-of-css-values-and-units-module-level-3-and-css-counter-styles-level-3&amp;action_name=W3C+Invites+Implementations+of+CSS+Values+and+Units+Module+Level+3+and+CSS+Counter+Styles+Level+3&amp;urlref=http%3A%2F%2Fwww.w3.org%2Fblog%2Fnews%2Ffeed" style="border:0;width:0;height:0" width="0" height="0" alt="" /></p>
+]]>
+</content:encoded>
+<wfw:commentRss>
+http://www.w3.org/blog/news/archives/4753?pk_campaign=feed&pk_kwd=w3c-invites-implementations-of-css-values-and-units-module-level-3-and-css-counter-styles-level-3/feed
+</wfw:commentRss>
+<slash:comments>0</slash:comments>
+</item>
+<item>
+<title>
+W3C Invites Implementations of Web Storage (Second Edition)
+</title>
+<link>
+http://www.w3.org/blog/news/archives/4751?pk_campaign=feed&pk_kwd=w3c-invites-implementations-of-web-storage-second-edition
+</link>
+<comments>
+http://www.w3.org/blog/news/archives/4751?pk_campaign=feed&pk_kwd=w3c-invites-implementations-of-web-storage-second-edition#comments
+</comments>
+<pubDate>Tue, 09 Jun 2015 15:09:52 +0000</pubDate>
+<dc:creator>
+<![CDATA[ Maria Auday ]]>
+</dc:creator>
+<category>
+<![CDATA[ Publication ]]>
+</category>
+<category>
+<![CDATA[ Web Design and Applications ]]>
+</category>
+<guid isPermaLink="false">http://www.w3.org/blog/news/?p=4751</guid>
+<description>
+<![CDATA[
+The Web Applications Working Group invites implementation of the Candidate Recommendation of Web Storage (Second Edition). This specification defines an API for persistent data storage of key-value pair data in Web clients, and introduces two related mechanisms, similar to HTTP session cookies, for storing name-value pairs on the client side. Learn more about the Rich [&#8230;]<img src="https://www.w3.org/analytics/piwik/piwik.php?idsite=7&amp;rec=1&amp;url=http%3A%2F%2Fwww.w3.org%2Fblog%2Fnews%2Farchives%2F4751%3Fpk_campaign%3Dfeed%26pk_kwd%3Dw3c-invites-implementations-of-web-storage-second-edition&amp;action_name=W3C+Invites+Implementations+of+Web+Storage+%28Second+Edition%29&amp;urlref=http%3A%2F%2Fwww.w3.org%2Fblog%2Fnews%2Ffeed" style="border:0;width:0;height:0" width="0" height="0" alt="" />
+]]>
+</description>
+<content:encoded>
+<![CDATA[
+<p>The <a href="http://www.w3.org/2008/webapps/">Web Applications Working Group</a> invites implementation of the Candidate Recommendation of <a href="http://www.w3.org/TR/2015/CR-webstorage-20150609/">Web Storage (Second Edition)</a>. This specification defines an API for persistent data storage of key-value pair data in Web clients, and introduces two related mechanisms, similar to HTTP session cookies, for storing name-value pairs on the client side. Learn more about the <a href="http://www.w3.org/2006/rwc/">Rich Web Client Activity</a>.</p> <p><img src="https://www.w3.org/analytics/piwik/piwik.php?idsite=7&amp;rec=1&amp;url=http%3A%2F%2Fwww.w3.org%2Fblog%2Fnews%2Farchives%2F4751%3Fpk_campaign%3Dfeed%26pk_kwd%3Dw3c-invites-implementations-of-web-storage-second-edition&amp;action_name=W3C+Invites+Implementations+of+Web+Storage+%28Second+Edition%29&amp;urlref=http%3A%2F%2Fwww.w3.org%2Fblog%2Fnews%2Ffeed" style="border:0;width:0;height:0" width="0" height="0" alt="" /></p>
+]]>
+</content:encoded>
+<wfw:commentRss>
+http://www.w3.org/blog/news/archives/4751?pk_campaign=feed&pk_kwd=w3c-invites-implementations-of-web-storage-second-edition/feed
+</wfw:commentRss>
+<slash:comments>0</slash:comments>
+</item>
+<item>
+<title>Entry Point Regulation Draft Published</title>
+<link>
+http://www.w3.org/blog/news/archives/4749?pk_campaign=feed&pk_kwd=entry-point-regulation-draft-published
+</link>
+<comments>
+http://www.w3.org/blog/news/archives/4749?pk_campaign=feed&pk_kwd=entry-point-regulation-draft-published#comments
+</comments>
+<pubDate>Tue, 09 Jun 2015 15:09:52 +0000</pubDate>
+<dc:creator>
+<![CDATA[ Maria Auday ]]>
+</dc:creator>
+<category>
+<![CDATA[ Publication ]]>
+</category>
+<category>
+<![CDATA[ Web Design and Applications ]]>
+</category>
+<guid isPermaLink="false">http://www.w3.org/blog/news/?p=4749</guid>
+<description>
+<![CDATA[
+The Web Application Security Working Group has published a Working Draft of Entry Point Regulation. Entry Point Regulation aims to mitigate the risk of reflected cross-site scripting (XSS), cross-site script inclusion (XSSI), and cross-site request forgery (CSRF) attacks by demarcating the areas of an application which are intended to be externally referencable. A specified policy [&#8230;]<img src="https://www.w3.org/analytics/piwik/piwik.php?idsite=7&amp;rec=1&amp;url=http%3A%2F%2Fwww.w3.org%2Fblog%2Fnews%2Farchives%2F4749%3Fpk_campaign%3Dfeed%26pk_kwd%3Dentry-point-regulation-draft-published&amp;action_name=Entry+Point+Regulation+Draft+Published&amp;urlref=http%3A%2F%2Fwww.w3.org%2Fblog%2Fnews%2Ffeed" style="border:0;width:0;height:0" width="0" height="0" alt="" />
