@@ -70,13 +70,18 @@ input{
 	background-color: #fefefe;
 	color: #5b5b5b;
 	border-bottom:2px solid #d8d8d8;
+  font-family: 'Kaushan Script', cursive;
+}
+.page>.header a {
+  letter-spacing: 2px;
+  font-size: 24px;
 }
 .header-menubtn {
 	display: inline-block;
 	padding: 0 18px;
 	line-height: 48px;
 	font-size: 20px;
-	background-image: url(../img/ic_drawer.png);
+/*  background-image: url(../img/ic_drawer.png);*/
 	background-position: 0 center;
 	background-repeat: no-repeat;
 	background-size: 14px 14px;
@@ -585,8 +590,9 @@ input{
 	float:left;
 	margin-left:10px;
 	font-size:20px;
-	line-height:65px;
+	line-height:55px;
 	color:#5b5b5b;
+  font-family: 'Kaushan Script', cursive;
 }
 
 .evaluate-btn{

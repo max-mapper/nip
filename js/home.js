@@ -4,22 +4,22 @@ $(function(){
 	slide.originX = $(document).width() / 2;
 	slide.originY = -640;
 	
-	$(".header-menubtn").click(function(e) {
-		if($('.page').hasClass("menu-open")){
-			$('.page, .menu, .chat').removeClass("menu-open");
-		}else{
-			$('.page, .menu, .chat').addClass("menu-open");
-		}
-    });
-	
-	$("#header-chat").click(function(e) {
-		if($('.page').hasClass("chat-open")){
-			$('.page, .menu, .chat').removeClass("chat-open");
-		}else{
-			$('.page, .menu, .chat').addClass("chat-open");
-		}
-    });
-	
+  // $(".header-menubtn").click(function(e) {
+  //   if($('.page').hasClass("menu-open")){
+  //     $('.page, .menu, .chat').removeClass("menu-open");
+  //   }else{
+  //     $('.page, .menu, .chat').addClass("menu-open");
+  //   }
+  //     });
+  //
+  // $("#header-chat").click(function(e) {
+  //   if($('.page').hasClass("chat-open")){
+  //     $('.page, .menu, .chat').removeClass("chat-open");
+  //   }else{
+  //     $('.page, .menu, .chat').addClass("chat-open");
+  //   }
+  //     });
+  //
 	
 	
 	
